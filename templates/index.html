@@ -1,0 +1,18 @@
+{% extends 'template.html' %}
+{% load render_bundle from webpack_loader %}
+
+{% block title %}React App{% endblock %}
+
+{% block header %}
+{% render_bundle 'main' 'css' %}
+{% endblock %}
+
+{% block content %}
+<noscript>You need to enable JavaScript to run this app.</noscript>
+teste
+<div id="root"></div>
+{% endblock %}
+
+{% block footer %}
+{% render_bundle 'main' 'js' %}
+{% endblock %}
