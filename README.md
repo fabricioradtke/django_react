@@ -13,7 +13,7 @@ sudo apt-get update && sudo apt-get install --no-install-recommends yarn
 yarn -v
 ```
 
-# Install Django
+# Instalar Django
 ```
 virtalenv env
 . env/bin/activate
@@ -23,7 +23,7 @@ django-admin startproject <projectname> .
 django-admin startapp <appname>
 ```
 
-# Confugure Django settings.py
+# Confugurar Django settings.py
 ```
 WEBPACK_LOADER = {
 	'DEFAULT': {
@@ -33,7 +33,7 @@ WEBPACK_LOADER = {
 }
 ```
 
-# Install React
+# Instalar React
 ```
 yarn init -y
 yarn add -D webpack webpack-cli webpack-bundle-tracker
@@ -42,7 +42,7 @@ yarn add -D @babel/plugin-proposal-class-properties
 yarn add react react-dom
 ```
 
-# Adicione os seguintes scripts ao package.json
+# Configurar package.json
 ```
 "scripts": {
 	"start": "webpack --mode development --watch",
@@ -50,12 +50,11 @@ yarn add react react-dom
 }
 ```
 
-# Para executar o servidor de desenvolvimento
+# Executar React
 ```
+# Desenvolvimento
 yarn start
-```
 
-# Para compilar em produção
-```
+# Produção
 yarn build
 ```
