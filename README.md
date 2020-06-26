@@ -1,3 +1,5 @@
+Projeto em Django usando React para renderizar o template.
+
 # Configurar ambiente
 ```
 # Instalar NodeJS
@@ -23,7 +25,7 @@ django-admin startproject <projectname> .
 django-admin startapp <appname>
 ```
 
-# Confugurar Django settings.py
+# Confugurar settings.py do Django
 ```
 WEBPACK_LOADER = {
 	'DEFAULT': {
