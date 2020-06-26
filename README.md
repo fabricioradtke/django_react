@@ -1,40 +1,37 @@
 # Django-React
 Projeto em Django usando React para renderizar o template.
 
-## Configurar o ambiente
+## Configurando o ambiente
 ```
-# Instalar NodeJS
+# Instalando NodeJS
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 sudo apt-get install -y nodejs
 node -v
 npm -v
 
-# Instalar Yarn
+# Instalando Yarn
 curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
 echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
 sudo apt-get update && sudo apt-get install --no-install-recommends yarn
 yarn -v
 ```
 
-## Instalando Django
+## Iniciando um projeto com o Django
 ```
+# Instalando Django
 virtalenv env
 . env/bin/activate
 pip install django
-```
 
-### Instalar Django Webpack
-```
+# Instalando Django-Webpack
 pip install django-webpack-loader
-```
 
-### Criar projeto no Django
-```
+# Criando novo projeto no Django
 django-admin startproject <projectname> .
 django-admin startapp <appname>
 ```
 
-## Confugurar settings.py do Django
+## Confugurando o "settings.py" do Django
 ```
 WEBPACK_LOADER = {
 	'DEFAULT': {
@@ -44,7 +41,7 @@ WEBPACK_LOADER = {
 }
 ```
 
-## Instalar React
+## Instalando o React
 ```
 yarn init -y
 yarn add -D webpack webpack-cli webpack-bundle-tracker
@@ -53,7 +50,7 @@ yarn add -D @babel/plugin-proposal-class-properties
 yarn add react react-dom
 ```
 
-## Configurar package.json
+## Configurando o "package.json"
 ```
 "scripts": {
 	"start": "webpack --mode development --watch",
@@ -61,7 +58,7 @@ yarn add react react-dom
 }
 ```
 
-## Executar React
+## Executando o React
 ```
 # Desenvolvimento
 yarn start
